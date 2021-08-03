@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans>
+    <bean id="rateLimiter" class="top.summersea.di.mybeans.RateLimiter">
+        <construct-arg ref="redisCounter"/>
+    </bean>
+
+    <bean id="redisCounter" class="top.summersea.di.mybeans.RedisCounter"
+          scope="singleton" lazy-init="true">
+        <construct-arg type="java.lang.String" value="127.0.0.1"/>
+        <construct-arg type="java.lang.Integer" value="1234"/>
+    </bean>
+</beans>
