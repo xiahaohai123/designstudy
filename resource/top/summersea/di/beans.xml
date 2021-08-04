@@ -9,4 +9,8 @@
         <construct-arg type="java.lang.String" value="127.0.0.1"/>
         <construct-arg type="java.lang.Integer" value="1234"/>
     </bean>
+
+    <bean id="testClass" class="top.summersea.di.mybeans.TestClass">
+        <construct-arg type="java.lang.String" value="summersea"/>
+    </bean>
 </beans>
