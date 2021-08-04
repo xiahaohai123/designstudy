@@ -36,6 +36,10 @@ public class BeanDefinition {
         return scope;
     }
 
+    public boolean isSingleton() {
+        return Scope.SINGLETON.equals(scope);
+    }
+
     public void setScope(Scope scope) {
         this.scope = scope;
     }

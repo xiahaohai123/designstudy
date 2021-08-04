@@ -4,6 +4,11 @@ public class RedisCounter {
     private String ip;
     private int count;
 
+    public RedisCounter(String ip, Integer count) {
+        this.ip = ip;
+        this.count = count;
+    }
+
     public String getIp() {
         return ip;
     }
